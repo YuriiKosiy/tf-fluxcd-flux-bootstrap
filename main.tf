@@ -10,7 +10,9 @@ provider "flux" {
     }
   }
 }
-
+module "flux" {
+  flux_version = "v2.3.0"
+}
 resource "flux_bootstrap_git" "this" {
   path = var.target_path
 }
