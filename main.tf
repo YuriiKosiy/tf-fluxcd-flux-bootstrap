@@ -11,6 +11,7 @@ provider "flux" {
   }
 }
 module "flux" {
+  source = "fluxcd/flux/kubernetes"
   flux_version = "v2.3.0"
 }
 resource "flux_bootstrap_git" "this" {
