@@ -2,7 +2,7 @@ terraform {
   required_providers {
     flux = {
       source  = "fluxcd/flux"
-      version = "2.0.0-rc.2"
+      version = "1.3.0"
     }
   }
 }
